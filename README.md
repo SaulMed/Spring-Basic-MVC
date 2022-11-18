@@ -3,6 +3,6 @@ A simple  Spring MVC project that work with send of params in a pair of routes u
 
 Some captures to the project:
 
-![](/Spring_MVC1/src/main/webapp/resources/img/v1.png)
-![](/Spring_MVC1/src/main/webapp/resources/img/v2.png)
-![](/Spring_MVC1/src/main/webapp/resources/img/v3.png)
+![](/src/main/resources/evidence/v1.png)
+![](/src/main/resources/evidence/v2.png)
+![](/src/main/resources/evidence/v3.png)
