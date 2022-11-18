@@ -1,0 +1,49 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #222222;	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  	height: 100vh;
+  	flex-direction: column;
+}
+
+h1.main{
+	color: #FFF;
+	font-family: monospace;
+}
+
+h2{
+	font-family: monospace;
+	color: #FFF;
+}
+
+li{
+	color: orange;
+	list-style-type: inside;
+}
+
+li>a{
+	color: yellowgreen;
+	align-items: left;
+}
+
+p{
+	color:greenyellow;
+	font-weight: bolder;
+}
+
+table{
+	text-align:center;
+	color: orange;
+	margin: 25px;	
+}
+
+img{
+	max-width: 500px;
+	margin: 15px;
+}

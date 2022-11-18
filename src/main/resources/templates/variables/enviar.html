@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title th:text="${titulo}"></title>
+<link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}"/>
+</head>
+<body>
+	<h2 th:text="${titulo}"></h2>
+	<ul>
+	<li>
+		<a th:href="@{/variables/value/} + ${'Hola soy un solo parametro'}">/variables/value/Hola soy un solo parametro</a>
+	</li>
+	<li>
+		<a th:href="@{/variables/value/} + ${atributo}">/variables/value/Soy un atributo del modelo</a>
+	</li>
+	<li>
+		<a th:href="@{/variables/values/} + ${'Hola Mundo'} + '/' + ${7} ">/variables/values/Hola Mundo/7</a>
+	</li>
+	</ul>
+</body>
+</html>

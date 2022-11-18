@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title th:text="${titulo}"></title>
+<link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}"/>
+</head>
+<body>
+	<h2 th:text="${titulo}"></h2>
+		<!-- 	Importante , los enlaces dentro de Thymeleaf se manejancon @ y parametros dentro de () -->
+	<li>	
+		<a th:href="@{/params/obtener}">/params/obtener</a>	
+	</li>
+	<li>	
+		<a th:href="@{/params/obtener(titleGame='Valorant' , category='Shooter', price=250)}">/params/obtener?titleGame=Valorant&category=Shooter&price=250</a>	
+	</li>
+	<li>
+		<a th:href="@{/params/obtener-servlet(titleGame='Fornite', category='Battle Royale', price=280)}">/params/obtener-servlet?titleGame=Fornite&category=Battle%20Royale&price=280</a>
+	</li>
+</body>
+</html>

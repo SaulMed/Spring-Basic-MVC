@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<title th:text="${titulo}"></title>
+<link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}"/>
+</head>
+<body>
+
+	<h1 class="main" th:text="${saludo}"></h1>
+	<ul>
+		<li><a th:href="@{/params/}">/params/</a></li>
+		<li><a th:href="@{/variables/}">/variables/</a></li>
+		<li><a th:href="@{/users/perfil}">/users/perfil</a>
+		<li><a th:href="@{/users/lista}">/users/lista</a>
+		<li><a th:href="@{http://www.google.com.mx}" target="_blank">Google</a>
+	</ul>
+	<img th:src="@{/img/logo.png}"/>
+	
+<script src="/js/app.js"></script>
+<!-- <table th:if="${!listUsers.isEmpty()}"> -->
+<!-- 		<thead> -->
+<!-- 			<tr> -->
+<!-- 				<th>Nombre</th> -->
+<!-- 				<th>Apellidos</th> -->
+<!-- 				<th>Edad</th> -->
+<!-- 				<th>Email</th> -->
+<!-- 			</tr> -->
+<!-- 		</thead> -->
+<!-- 		<tbody> -->
+<!-- 			<tr th:each="user: ${listUsers}"> -->
+<!-- 				<td th:text="${user.nombre}"></td> -->
+<!-- 				<td th:text="${user.apellidos}"></td> -->
+<!-- 				<td th:text="${user.edad}"></td> -->
+<!-- 				<td th:text="${user.email}"></td> -->
+<!-- 			</tr> -->
+<!-- 		</tbody> -->
+<!-- 	</table> -->
+
+</body>
+</html>
