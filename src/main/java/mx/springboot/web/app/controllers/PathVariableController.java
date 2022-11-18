@@ -12,7 +12,7 @@ public class PathVariableController {
 
 	@GetMapping({ "/", "" })
 	public String enviar(Model modelo) {
-		modelo.addAttribute("titulo", "Enviar Parametros URL / @PathVariable - Movies");
+		modelo.addAttribute("titulo", "Enviar Parametros URL / @PathVariable");
 		modelo.addAttribute("atributo","Soy un atributo del modelo");
 		return "variables/enviar";
 	}
